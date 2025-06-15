@@ -1,0 +1,14 @@
+[project]
+name = "pg-benchmark"
+version = "0.0.1"
+description = "Benchmarks the performance of PostgreSQL queries."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncpg>=0.30.0",
+]
+
+[project.optional-dependencies]
+extra = [
+    "ipykernel>=6.29.5",
+]
