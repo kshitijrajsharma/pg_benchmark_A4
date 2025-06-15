@@ -1,3 +1,26 @@
+"""
+pg_benchmark.py
+
+A comprehensive asynchronous benchmarking tool for PostgreSQL queries.
+
+This script provides utilities to:
+- Benchmark SQL queries against a PostgreSQL database, measuring execution time and collecting query plans.
+- Compare performance before and after optimizations such as index creation.
+- Automatically manage database connections via an asyncpg connection pool.
+- Clear PostgreSQL and OS-level caches between benchmark runs for accurate measurement.
+- Generate detailed and markdown reports summarizing benchmark results and performance improvements.
+
+Configuration:
+- Connection details can be provided as a connection string or via environment variables (DATABASE_URL, or POSTGRES_HOST, POSTGRES_DB, etc.).
+
+Example usage:
+- Run the script directly to execute a sample benchmark, compare query performance before and after indexing, and generate a markdown report.
+
+Dependencies: asyncpg, Python 3.10+, and a running PostgreSQL instance with the data you wanna test on.
+
+Author: kshitijrajsharma
+"""
+
 import asyncio
 import hashlib
 import logging
